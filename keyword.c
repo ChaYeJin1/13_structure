@@ -30,7 +30,7 @@ void count_word(char* word){
 	
 	for(i=0; i<NKEYS; i++)
 	{
-		if(strncmp(word, keywrds[i]. keywrd, strlen(keywrds[i].num)) == 0)
+		if(strncmp(word, keywrds[i]. keywrd, strlen(keywrds[i].keywrd)) == 0)
 		{
 			keywrds[i].num++;
 			break;
