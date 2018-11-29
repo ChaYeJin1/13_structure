@@ -6,7 +6,7 @@ int is_whitespace(char c)
 	if(c == ' ' ||
 	   c == '\t' ||
 	   c == '\n' ||
-	   c =='\r' ||
+	   c == '\r' ||
 	   c == '(' ||
 	   c == ')') 
 	return 1; //공백글자 
