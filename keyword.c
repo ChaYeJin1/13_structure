@@ -3,6 +3,10 @@
 #include <string.h>
 
 #define NKEYS       13
+struct keytab{
+int num;
+char keywrd[10];
+};
 
 
 struct keytab keywrds[NKEYS] = {
@@ -22,10 +26,24 @@ struct keytab keywrds[NKEYS] = {
 };
 
 void count_word(char* word){
+	int i;
 	
+	for(i=0; i<NKEYS; i++)
+	{
+		if(strncmp(word, keywrds[i]. keywrd, strlen(keywrds[i].num)) == 0)
+		{
+			keywrds[i].num++;
+			break;
+		}
+	}
 }
 
 
 void print_word(void) {
+	int i;
 	
+	for(i=0; i<NKEYS; i++)
+	{
+		printf("%s : %i\n", keywrds[i].keywrd, keywrds[i].num);
+	}
 }
